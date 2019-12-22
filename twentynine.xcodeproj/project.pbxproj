@@ -8,51 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		61AFE7BC23AD36B3003AB194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7BB23AD36B3003AB194 /* AppDelegate.swift */; };
-		61AFE7BE23AD36B3003AB194 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 61AFE7BD23AD36B3003AB194 /* GameScene.sks */; };
-		61AFE7C023AD36B3003AB194 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 61AFE7BF23AD36B3003AB194 /* Actions.sks */; };
 		61AFE7C223AD36B3003AB194 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7C123AD36B3003AB194 /* GameScene.swift */; };
 		61AFE7C423AD36B3003AB194 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7C323AD36B3003AB194 /* GameViewController.swift */; };
 		61AFE7C723AD36B3003AB194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AFE7C523AD36B3003AB194 /* Main.storyboard */; };
 		61AFE7C923AD36B5003AB194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61AFE7C823AD36B5003AB194 /* Assets.xcassets */; };
 		61AFE7CC23AD36B5003AB194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AFE7CA23AD36B5003AB194 /* LaunchScreen.storyboard */; };
-		61AFE7D723AD36B5003AB194 /* twentynineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7D623AD36B5003AB194 /* twentynineTests.swift */; };
+		61AFE7E223AD398B003AB194 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7E123AD398B003AB194 /* Layer.swift */; };
+		61AFE7E423AD3A3A003AB194 /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7E323AD3A3A003AB194 /* ImageName.swift */; };
+		61AFE7E623AE3D54003AB194 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7E523AE3D54003AB194 /* PlayerNode.swift */; };
+		61AFE7EC23AF8D32003AB194 /* GameBoardTwentyNine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61AFE7EB23AF8D32003AB194 /* GameBoardTwentyNine.plist */; };
+		61AFE7F023AF8F1C003AB194 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE7EF23AF8F1C003AB194 /* GameBoard.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		61AFE7D323AD36B5003AB194 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61AFE7B023AD36B3003AB194 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61AFE7B723AD36B3003AB194;
-			remoteInfo = twentynine;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		61AFE7B823AD36B3003AB194 /* twentynine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twentynine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AFE7BB23AD36B3003AB194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61AFE7BD23AD36B3003AB194 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		61AFE7BF23AD36B3003AB194 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		61AFE7C123AD36B3003AB194 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		61AFE7C323AD36B3003AB194 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		61AFE7C623AD36B3003AB194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61AFE7C823AD36B5003AB194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61AFE7CB23AD36B5003AB194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61AFE7CD23AD36B5003AB194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61AFE7D223AD36B5003AB194 /* twentynineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twentynineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61AFE7D623AD36B5003AB194 /* twentynineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twentynineTests.swift; sourceTree = "<group>"; };
-		61AFE7D823AD36B5003AB194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61AFE7E123AD398B003AB194 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		61AFE7E323AD3A3A003AB194 /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
+		61AFE7E523AE3D54003AB194 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		61AFE7EB23AF8D32003AB194 /* GameBoardTwentyNine.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GameBoardTwentyNine.plist; sourceTree = "<group>"; };
+		61AFE7EF23AF8F1C003AB194 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		61AFE7B523AD36B3003AB194 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61AFE7CF23AD36B5003AB194 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				61AFE7BA23AD36B3003AB194 /* twentynine */,
-				61AFE7D523AD36B5003AB194 /* twentynineTests */,
 				61AFE7B923AD36B3003AB194 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				61AFE7B823AD36B3003AB194 /* twentynine.app */,
-				61AFE7D223AD36B5003AB194 /* twentynineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,25 +67,19 @@
 			isa = PBXGroup;
 			children = (
 				61AFE7BB23AD36B3003AB194 /* AppDelegate.swift */,
-				61AFE7BD23AD36B3003AB194 /* GameScene.sks */,
-				61AFE7BF23AD36B3003AB194 /* Actions.sks */,
 				61AFE7C123AD36B3003AB194 /* GameScene.swift */,
 				61AFE7C323AD36B3003AB194 /* GameViewController.swift */,
 				61AFE7C523AD36B3003AB194 /* Main.storyboard */,
 				61AFE7C823AD36B5003AB194 /* Assets.xcassets */,
 				61AFE7CA23AD36B5003AB194 /* LaunchScreen.storyboard */,
 				61AFE7CD23AD36B5003AB194 /* Info.plist */,
+				61AFE7E123AD398B003AB194 /* Layer.swift */,
+				61AFE7E323AD3A3A003AB194 /* ImageName.swift */,
+				61AFE7E523AE3D54003AB194 /* PlayerNode.swift */,
+				61AFE7EB23AF8D32003AB194 /* GameBoardTwentyNine.plist */,
+				61AFE7EF23AF8F1C003AB194 /* GameBoard.swift */,
 			);
 			path = twentynine;
-			sourceTree = "<group>";
-		};
-		61AFE7D523AD36B5003AB194 /* twentynineTests */ = {
-			isa = PBXGroup;
-			children = (
-				61AFE7D623AD36B5003AB194 /* twentynineTests.swift */,
-				61AFE7D823AD36B5003AB194 /* Info.plist */,
-			);
-			path = twentynineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,24 +102,6 @@
 			productReference = 61AFE7B823AD36B3003AB194 /* twentynine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		61AFE7D123AD36B5003AB194 /* twentynineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 61AFE7DE23AD36B5003AB194 /* Build configuration list for PBXNativeTarget "twentynineTests" */;
-			buildPhases = (
-				61AFE7CE23AD36B5003AB194 /* Sources */,
-				61AFE7CF23AD36B5003AB194 /* Frameworks */,
-				61AFE7D023AD36B5003AB194 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				61AFE7D423AD36B5003AB194 /* PBXTargetDependency */,
-			);
-			name = twentynineTests;
-			productName = twentynineTests;
-			productReference = 61AFE7D223AD36B5003AB194 /* twentynineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,10 +114,6 @@
 				TargetAttributes = {
 					61AFE7B723AD36B3003AB194 = {
 						CreatedOnToolsVersion = 11.2.1;
-					};
-					61AFE7D123AD36B5003AB194 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 61AFE7B723AD36B3003AB194;
 					};
 				};
 			};
@@ -176,7 +131,6 @@
 			projectRoot = "";
 			targets = (
 				61AFE7B723AD36B3003AB194 /* twentynine */,
-				61AFE7D123AD36B5003AB194 /* twentynineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,18 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61AFE7EC23AF8D32003AB194 /* GameBoardTwentyNine.plist in Resources */,
 				61AFE7C723AD36B3003AB194 /* Main.storyboard in Resources */,
-				61AFE7BE23AD36B3003AB194 /* GameScene.sks in Resources */,
 				61AFE7C923AD36B5003AB194 /* Assets.xcassets in Resources */,
 				61AFE7CC23AD36B5003AB194 /* LaunchScreen.storyboard in Resources */,
-				61AFE7C023AD36B3003AB194 /* Actions.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61AFE7D023AD36B5003AB194 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,28 +155,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				61AFE7C223AD36B3003AB194 /* GameScene.swift in Sources */,
+				61AFE7E423AD3A3A003AB194 /* ImageName.swift in Sources */,
+				61AFE7E223AD398B003AB194 /* Layer.swift in Sources */,
+				61AFE7F023AF8F1C003AB194 /* GameBoard.swift in Sources */,
+				61AFE7E623AE3D54003AB194 /* PlayerNode.swift in Sources */,
 				61AFE7C423AD36B3003AB194 /* GameViewController.swift in Sources */,
 				61AFE7BC23AD36B3003AB194 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61AFE7CE23AD36B5003AB194 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61AFE7D723AD36B5003AB194 /* twentynineTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		61AFE7D423AD36B5003AB194 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61AFE7B723AD36B3003AB194 /* twentynine */;
-			targetProxy = 61AFE7D323AD36B5003AB194 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		61AFE7C523AD36B3003AB194 /* Main.storyboard */ = {
@@ -302,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R946HT6299;
 				INFOPLIST_FILE = twentynine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R946HT6299;
 				INFOPLIST_FILE = twentynine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,50 +335,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		61AFE7DF23AD36B5003AB194 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R946HT6299;
-				INFOPLIST_FILE = twentynineTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.majormojo.twentynineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twentynine.app/twentynine";
-			};
-			name = Debug;
-		};
-		61AFE7E023AD36B5003AB194 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R946HT6299;
-				INFOPLIST_FILE = twentynineTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.majormojo.twentynineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twentynine.app/twentynine";
 			};
 			name = Release;
 		};
@@ -463,15 +355,6 @@
 			buildConfigurations = (
 				61AFE7DC23AD36B5003AB194 /* Debug */,
 				61AFE7DD23AD36B5003AB194 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		61AFE7DE23AD36B5003AB194 /* Build configuration list for PBXNativeTarget "twentynineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				61AFE7DF23AD36B5003AB194 /* Debug */,
-				61AFE7E023AD36B5003AB194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

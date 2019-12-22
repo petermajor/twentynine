@@ -1,37 +1,24 @@
-//
-//  GameViewController.swift
-//  twentynine
-//
-//  Created by Peter Major on 20/12/2019.
-//  Copyright © 2019 majormojo.co.uk Limited. All rights reserved.
-//
-
 import UIKit
 import SpriteKit
-import GameplayKit
 
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        let scene = GameScene(size: view.bounds.size)
+
+        let skView = self.view as! SKView
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+        skView.ignoresSiblingOrder = true
+        skView.presentScene(scene)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        print("view controller size: \(view.frame.size)")
+    }
+    
     override var shouldAutorotate: Bool {
         return true
     }
