@@ -15,7 +15,5 @@ struct GameBoard: Decodable {
 }
 
 struct GameBoardPlayer: Decodable {
-    let start1: CGPoint
-    let start2: CGPoint
-    let points: [CGPoint]
+    let positions: [CGPoint]
 }
