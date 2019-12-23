@@ -19,4 +19,3 @@ struct GameBoardPlayer: Decodable {
     let start2: CGPoint
     let points: [CGPoint]
 }
-

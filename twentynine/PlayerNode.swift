@@ -1,48 +1,67 @@
-import UIKit
 import SpriteKit
 
 class PlayerNode: SKNode {
 
-    let circleRadius: CGFloat = 8
+    private let start1: CGPoint
+    private let start2: CGPoint
+    private let points: [CGPoint]
+    private let color: UIColor
+
+    private var pegIndexes = [Int]()
     
-    let start1: CGPoint
-    let start2: CGPoint
-    let points: [CGPoint]
-    
-    init(start1: CGPoint, start2: CGPoint, points: [CGPoint]) {
+    init(start1: CGPoint, start2: CGPoint, points: [CGPoint], color: UIColor, isPlaying: Bool) {
+
         self.start1 = start1
         self.start2 = start2
         self.points = points
+        self.color = color
+
+        if isPlaying {
+            pegIndexes = [-1, -2]
+        }
 
         super.init()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        start1 = aDecoder.decodeCGPoint(forKey: "start1")
-        start2 = aDecoder.decodeCGPoint(forKey: "start2")
-        points = aDecoder.decodeObject(forKey: "points") as! [CGPoint]
-
-        super.init(coder: aDecoder)
+        fatalError("not implemented")
     }
 
     func addToScene(_ scene: SKScene) {
-        zPosition = Layer.points
+        zPosition = Layer.pegHoles
         scene.addChild(self)
         
-        addCircleNode(position: start1)
-        addCircleNode(position: start2)
+        addPegHoleNode(position: start1)
+        addPegHoleNode(position: start2)
         
         for point in points {
-            addCircleNode(position: point)
+            addPegHoleNode(position: point)
+        }
+        
+        for pegIndex in pegIndexes {
+            let position = getPositionForHoleIndex(pegIndex)
+            addPegNode(position: position)
         }
     }
     
-    private func addCircleNode(position: CGPoint) {
-        let circle = SKShapeNode(circleOfRadius: circleRadius)
-        circle.position = position
-//        circle.strokeColor = SKColor.black
-//        circle.glowWidth = 1.0
-        circle.fillColor = SKColor.white
-        addChild(circle)
+    private func addPegHoleNode(position: CGPoint) {
+        let pegHoleNode = PegHoleNode(position: position)
+        addChild(pegHoleNode)
+    }
+    
+    private func addPegNode(position: CGPoint) {
+        let pegNode = PegNode(position: position, color: color)
+        addChild(pegNode)
+    }
+    
+    private func getPositionForHoleIndex(_ index: Int) -> CGPoint {
+        switch index {
+        case -2:
+            return start2
+        case -1:
+            return start1
+        default:
+            return points[index]
+        }
     }
 }
