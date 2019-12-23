@@ -6,6 +6,7 @@ class PlayerNode: SKNode {
     
     private let pegColor: UIColor
     private var pegPositionIndexes = [Int]()
+    
     private var pegs = [PegNode]()
 
     init(holePositions: [CGPoint], pegColor: UIColor, isPlaying: Bool) {
@@ -61,8 +62,9 @@ class PlayerNode: SKNode {
             fatalError("resetPosition called on peg that is not a child of the player")
         }
         
-        let positionIndex = pegPositionIndexes[index]
-        peg.position = holePositions[positionIndex]
+        let holeIndex = pegPositionIndexes[index]
+        
+        peg.position = holePositions[holeIndex]
     }
     
     func setPositionToClosestHole(_ peg: PegNode) {
@@ -72,8 +74,8 @@ class PlayerNode: SKNode {
 
         let holeIndex = closestHolePositionIndex(point: peg.position)
         let position = holePositions[holeIndex]
-        peg.position = position
         
+        peg.position = position
         pegPositionIndexes[pegIndex] = holeIndex
     }
     

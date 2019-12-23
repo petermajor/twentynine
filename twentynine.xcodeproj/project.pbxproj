@@ -21,6 +21,7 @@
 		61AFE80923B0C4C6003AB194 /* CGPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE80823B0C4C6003AB194 /* CGPointExtensions.swift */; };
 		61AFE80D23B0DF2D003AB194 /* PegHoleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE80C23B0DF2D003AB194 /* PegHoleNode.swift */; };
 		61AFE80F23B0E28C003AB194 /* PegNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE80E23B0E28C003AB194 /* PegNode.swift */; };
+		61AFE81123B11D82003AB194 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFE81023B11D82003AB194 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		61AFE80823B0C4C6003AB194 /* CGPointExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtensions.swift; sourceTree = "<group>"; };
 		61AFE80C23B0DF2D003AB194 /* PegHoleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegHoleNode.swift; sourceTree = "<group>"; };
 		61AFE80E23B0E28C003AB194 /* PegNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegNode.swift; sourceTree = "<group>"; };
+		61AFE81023B11D82003AB194 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				61AFE7BB23AD36B3003AB194 /* AppDelegate.swift */,
-				61AFE7C123AD36B3003AB194 /* GameScene.swift */,
 				61AFE7C323AD36B3003AB194 /* GameViewController.swift */,
 				61AFE7C523AD36B3003AB194 /* Main.storyboard */,
 				61AFE7C823AD36B5003AB194 /* Assets.xcassets */,
@@ -81,6 +82,8 @@
 				61AFE7CD23AD36B5003AB194 /* Info.plist */,
 				61AFE7E123AD398B003AB194 /* Layer.swift */,
 				61AFE7E323AD3A3A003AB194 /* ImageName.swift */,
+				61AFE81023B11D82003AB194 /* Configuration.swift */,
+				61AFE7C123AD36B3003AB194 /* GameScene.swift */,
 				61AFE7E523AE3D54003AB194 /* PlayerNode.swift */,
 				61AFE80E23B0E28C003AB194 /* PegNode.swift */,
 				61AFE80C23B0DF2D003AB194 /* PegHoleNode.swift */,
@@ -173,6 +176,7 @@
 				61AFE80923B0C4C6003AB194 /* CGPointExtensions.swift in Sources */,
 				61AFE7BC23AD36B3003AB194 /* AppDelegate.swift in Sources */,
 				61AFE80F23B0E28C003AB194 /* PegNode.swift in Sources */,
+				61AFE81123B11D82003AB194 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

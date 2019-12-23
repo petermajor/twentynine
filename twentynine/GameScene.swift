@@ -10,8 +10,8 @@ class GameScene: SKScene {
     override func willMove(from view: SKView) {
         super.willMove(from: view)
         
-        size = CGSize(width: 1366, height: 1024)
-        scaleMode = .aspectFill
+        size = Configuration.shared.sceneSize
+        scaleMode = Configuration.shared.sceneScaleMode
     }
     
     override func didMove(to view: SKView) {
@@ -37,9 +37,9 @@ class GameScene: SKScene {
     private func setupGameBoard() {
         let gameBoard = readGameBoard()
         
-        setup(player: gameBoard.player1, pegColor: .red, isPlaying: true)
-        setup(player: gameBoard.player2, pegColor: .green, isPlaying: true)
-        setup(player: gameBoard.player3, pegColor: .blue, isPlaying: false)
+        setup(player: gameBoard.player1, pegColor: Configuration.shared.pegColorPlayer1, isPlaying: true)
+        setup(player: gameBoard.player2, pegColor: Configuration.shared.pegColorPlayer2, isPlaying: true)
+        setup(player: gameBoard.player3, pegColor: Configuration.shared.pegColorPlayer3, isPlaying: false)
         setup(finish: gameBoard.finish)
     }
     
@@ -77,6 +77,8 @@ class GameScene: SKScene {
             return
         }
 
+        print("touchesBegan")
+        
         let player = peg.player
         
         let actualPeg = player.getBackPeg()
@@ -93,18 +95,27 @@ class GameScene: SKScene {
             return
         }
 
+        //print("touchesMoved")
         peg.position = location
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let peg = movingPeg else { return }
         
+        print("touchesEnded")
+
+        movingPeg = nil
+
         let player = peg.player
         player.setPositionToClosestHole(peg)
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let peg = movingPeg else { return }
+
+        print("touchesCancelled")
+        
+        movingPeg = nil
 
         let player = peg.player
         player.resetPosition(peg)

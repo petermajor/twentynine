@@ -7,15 +7,15 @@ class PegHoleNode : SKShapeNode {
     }
 
     convenience init(position: CGPoint) {
-        self.init(circleOfRadius: CGFloat(8))
+        self.init(circleOfRadius: Configuration.shared.pegHoleRadius)
 
         self.zPosition = Layer.pegHoles
         self.position = position
-        self.fillColor = SKColor.white
-
+        self.fillColor = Configuration.shared.pegHoleColor
+        self.strokeColor = self.fillColor
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("not implemented")
     }
 }
